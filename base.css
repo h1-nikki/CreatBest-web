@@ -1,0 +1,50 @@
+﻿/*
+ * @Name: Style
+ * @Overview: reset
+ * @Company: http://www.CreatBest.com
+ * @Author: mittya
+ */
+
+/** Reset **/
+a, blockquote, body, center, code, dd, div, dl, dt, em, embed, font, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, input, iframe, img, label, li, object, ol, p, pre, small, span, strong, sub, sup, table, tbody, td, th, thead, tr, ul { margin:0; padding:0; }
+html, body { height:100%; }
+/* reset font */
+html { -webkit-text-size-adjust:none; /* Chrome-zh font size */ color:#333; background-color:#FFF; }
+body, button, input, select, textarea { font:12px/1.5 Arial, '\5b8b\4f53', Tahoma; }
+input, select, textarea { font-size:100%; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+b, strong { font-weight:800; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:Tahoma, Arial; }
+small { font-size:12px; }
+/* reset list */
+ul, ol { list-style:none; }
+/* reset text */
+a { text-decoration:none; color:#5471A3; outline:none; }
+a:active{ star:expression(this.onFocus=this.blur()); }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+/* reset form */
+legend { color:#000; } /* for IE6 */
+input, textarea, select { font-family:inherit; font-size:inherit; font-weight:inherit; }
+input, textarea, select { font-size:100%\9; }
+/* reset table */
+table { border-collapse:collapse; border-spacing:0; }
+th { text-align:inherit; } /* IE bug fixed: th is not inherit text-align */
+/* reset img */
+img { border:0; }
+/* reset HTML5 elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; }
+mark { background:#FF0; }
+/* other */
+iframe { display:block; }
+del { text-decoration:line-through; }
+/* float */
+.fn-left, .fn-right { display:inline; /* for IE6 double margin */ }
+.fn-left { float:left; }
+.fn-right { float:right; }
+/* clear */
+.fn-clearfix:after { display:block; font-size:0; content:'\0020'; clear:both; height:0; }
+.fn-clearfix { zoom:1; /* for IE6 IE7 */ }
+.fn-clear { visibility:hidden; clear:both; }
