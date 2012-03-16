@@ -60,6 +60,4 @@ del { text-decoration:line-through; }
 
 /** golbal **/
 .ui-header,
-.ui-show,
-.ui-content,
 .ui-footer { margin:0 auto; width:974px; }
