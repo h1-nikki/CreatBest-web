@@ -8,10 +8,10 @@
 5. JS命名...
 ### 注释
 1. 
-① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩
-⌘
-参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本。
-![alt 文字](图片 URL)
+① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩  
+⌘  
+参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本。  
+![alt 文字](图片 URL)  
 > ## header
 >
 > 1. first
