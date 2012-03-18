@@ -24,6 +24,25 @@
 
 
     
+>    /* float */  
+>      
+>      
+>      
+
+
+
+> a
+>> a
+>>> b
+>>>> c
+
+    code
+    code
+    code
+    code
+
+
+
 
     /* float */
     .fn-left, .fn-right { display:inline; /* for IE6 double margin */ }
