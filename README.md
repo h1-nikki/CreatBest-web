@@ -12,20 +12,25 @@
 
 ### 注释（利人利己）
 + 组件注释，如：  
-      
->    /*  
->     * @Name: base （组件名称）  
->     * @Overview: reset & global （组件功能）  
->     * @Author: mittya （作者）  
->     */  
+
+
+    /*  
+     * @Name: base （组件名称）  
+     * @Overview: reset & global （组件功能）  
+     * @Author: mittya （作者）  
+     */  
 
 
 + 每一块或没一个功能区样式都要使用 /* 注释 */ 来注释，中英文皆可，注意空格！样式内注释要在花括号之内，如：  
-    
->    /* float **/  
->    .fn-left, .fn-right { display:inline; /* for IE6 double margin */ }  
->    .fn-left { float:left; }  
->    .fn-right { float:right; }  
+
+
+    /* float **/  
+    .fn-left, .fn-right { display:inline; /* for IE6 double margin */ }  
+    .fn-left { float:left; }  
+    .fn-right { float:right; }  
+
++ t
++ t
 
 
 
