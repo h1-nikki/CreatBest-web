@@ -22,3 +22,5 @@
 
   
 > NSLog(@"github");  
+
+>> .style { color:#000; }
