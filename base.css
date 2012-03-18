@@ -44,7 +44,7 @@ input, textarea, select { font-size:100%\9; }
 table { border-collapse:collapse; border-spacing:0; }
 th { text-align:inherit; } /* IE bug fixed: th is not inherit text-align */
 
-img { border:0; }
+img { font-size:0; border:0; }
 
 iframe { display:block; }
 del { text-decoration:line-through; }
