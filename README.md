@@ -12,9 +12,9 @@
 
 ### 注释（利人利己）
 + 组件注释，如：  
-<pre>    
+      
     /*  
-     * @Name: base  
+    &nbsp;* @Name: base  
      * @Overview: reset & global  
      * @Author: mittya  
      */  
