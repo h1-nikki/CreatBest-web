@@ -15,9 +15,12 @@
 
 `
     /*  
-     * @Name: base （组件名称）  
+     * @Name: base （组件名称） 
+     
      * @Overview: reset & global （组件功能）  
+     
      * @Author: mittya （作者）  
+     
      */  
 `
 
