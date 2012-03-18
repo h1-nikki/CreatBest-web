@@ -26,7 +26,7 @@
     /* float **/  
     .fn-left, .fn-right { display:inline; /** for IE6 double margin */ }  
     .fn-left { float:left; }  
->    .fn-right { float:right; }  
+    .fn-right { float:right; }  
 
 
 
