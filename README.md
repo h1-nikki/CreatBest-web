@@ -10,15 +10,26 @@
 + 谨慎使用关键词来命名（如：select, active, first, last, left, right, more ...）如果命名可通用则要限定在该命名所处上下文环境中。例：有一标签Class为.header的子集中有一通用标签名为 .more，应该这样定义样式 .header .more {} 除特殊情况禁止单独设置成全局样式，以免影响其它样式
 + JS命名...
 
-### 注释
-+ 注释
+### 注释（写注释是必须的，利人利己）
++ 组件注释，如：
+    /*
+     * @Name: base 组件名
+     * @Overview: reset & global 组件功能介绍
+     * @Author: mittya 作者
+     */
++ 每一块或没一个功能区样式都要使用 /* 注释 */ 来注释，中英文皆可，注意空格！样式内注释要在花括号之内，如：
+    /* float */
+    .fn-left, .fn-right { display:inline; /* for IE6 double margin */ }
+    .fn-left { float:left; }
+    .fn-right { float:right; }
 
-参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本。  
-
-![github](https://a248.e.akamai.net/assets.github.com/images/modules/about_page/github_logo.png?1306884374)  
-
-  
-> NSLog(@"github");  
 
 
-    .style { color:#000; }
+
+
+
+
+
+
+
+部分参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本。  
