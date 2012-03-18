@@ -14,9 +14,9 @@
 + 组件注释，如：  
       
 >    /*  
->     * @Name: base  
->     * @Overview: reset & global  
->     * @Author: mittya  
+>     * @Name: base （组件名称）  
+>     * @Overview: reset & global （组件功能）  
+>     * @Author: mittya （作者）  
 >     */  
 
 
@@ -27,6 +27,21 @@
 >    .fn-left { float:left; }  
 >    .fn-right { float:right; }  
 
+
+> a
+>> a
+>>> b
+>>>> c
+
+    code
+    code
+    code
+    code
+
+
+
+    test */ test
+    /* test */
 
 
 
