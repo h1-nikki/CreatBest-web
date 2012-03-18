@@ -13,8 +13,8 @@
 ### 注释（利人利己）
 + 组件注释，如：
 
-    /*
-     * @Name: base 组件名
+> /*
+>  * @Name: base 组件名
      * @Overview: reset & global 组件功能介绍
      * @Author: mittya 作者
      */
