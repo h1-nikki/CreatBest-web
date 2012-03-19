@@ -35,4 +35,4 @@
 + 1
 
 
-`部分参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本。 `
+部分参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本
