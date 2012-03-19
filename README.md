@@ -20,3 +20,14 @@
      * @Overview: reset & global
      * @Author: mittya
      */
+
+
++ 每一块或没一个功能区样式都要使用 /* 注释 */ 来注释，中英文皆可，注意空格！样式内注释要在花括号之内
+> 代码示例：
+
+    /* clear */
+    .fn-clearfix:after { display:block; font-size:0; content:'\0020'; clear:both; height:0; }
+    .fn-clearfix { zoom:1; /* for IE6 IE7 */ }
+    .fn-clear { visibility:hidden; clear:both; }
+    
++ 1
