@@ -37,7 +37,18 @@
     .fn-clearfix { zoom:1; /* for IE6 IE7 */ }
     .fn-clear { visibility:hidden; clear:both; }
     
-+ 1
++ 大模块可使用 /** 注释 **/ 来注释
+
+> 代码示例：
+
+    /** Reset **/
+    a, blockquote, button, body, ... { margin:0; padding:0; }
+    ...
+    /** golbal **/
+    .ui-header,
+    .ui-footer { margin:0 auto; width:974px; }
+
++ o
 
 
-部分参考自 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本
+参考 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本
