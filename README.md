@@ -18,5 +18,6 @@
 
     /*
      * @Name: base
-     * @
+     * @Overview: reset & global
+     * @Author: mittya
      */
