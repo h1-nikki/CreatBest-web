@@ -9,7 +9,7 @@
 + 如样式有必要在页面中书写，应写在 `<head>` 标签中的 `<style>` 里
 
 ### 2、样式书写（这仅是内部规范，别较真儿）  
-+ 具体书写规范参考 [base.css](https://github.com/mittya/ya/base.css) 文件，空格需注意
++ 具体书写规范参考 [base.css](https://github.com/mittya/ya/blob/master/base.css) 文件，空格需注意
 + 除 Reset 外其它通用样式建议这样写  
 
 > 代码示例：
