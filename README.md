@@ -1,6 +1,9 @@
 # 前端规范，仅限内部使用
 ---
 
+## 页面规范（HTML）
++ update... [html](http://sofish.de/1688)
+
 ## 样式规范（CSS）
 
 ### 1、CSS 文件  
@@ -70,5 +73,7 @@
 ### 5、关于 Hack
 + update...
 
+参考 [Alice](http://aliceui.com/css-spec/)
 
-参考 [Alice](http://aliceui.com/css-spec/)，修改为适合内部团队使用的版本
+## 脚本规范（JavaScript）
++ update...
