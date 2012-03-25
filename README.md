@@ -73,7 +73,8 @@
 ### 5、关于 Hack
 + update...
 
-参考 [Alice](http://aliceui.com/css-spec/)
 
 ## 脚本规范（JavaScript）
 + update...
+
+感谢：[Alice](http://aliceui.com/css-spec/)
