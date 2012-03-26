@@ -2,7 +2,7 @@
 ---
 
 ## 页面规范（HTML）  
-+ 使用模板页 [index.html](index.html）  
++ 使用模板页 [index.html](index.html)   
 + 注意编码，统一 utf-8  
 + 标题（Title）写法`网站全名`，内页 Title 写法 `栏目名称 - 网站名称` 注意空格  
 + Meta 标签必写，关系到优化，尽量写详细。更多：[SEO](http://baike.baidu.com/view/1047.htm)  
