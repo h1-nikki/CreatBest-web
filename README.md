@@ -1,8 +1,15 @@
 # 前端规范，仅限内部使用
 ---
 
-## 页面规范（HTML）
-+ update... [html](http://sofish.de/1688)
+## 页面规范（HTML）  
++ 使用模板页 [index.html](index.html）  
++ 注意编码，统一 utf-8  
++ 标题（Title）写法`网站全名`，内页 Title 写法 `栏目名称 - 网站名称` 注意空格  
++ Meta 标签必写，关系到优化，尽量写详细。更多：[SEO](http://baike.baidu.com/view/1047.htm)  
++ 样式引入 `<link rel="stylesheet" href="base.css" />`  
++ 建议每个项目都有图标的引入，放在项目根目录即可 `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />` 如果你不写页面加载也会默认找这个文件  
++ 不允许在标签中直接写样式，除特例外  
++ update... [html](http://sofish.de/1688)  
 
 ## 样式规范（CSS）
 
@@ -12,7 +19,7 @@
 + 如样式有必要在页面中书写，应写在 `<head>` 标签中的 `<style>` 里
 
 ### 2、样式书写（这仅是内部规范，别较真儿）  
-+ 具体书写规范参考 [base.css](https://github.com/mittya/ya/blob/master/base.css) 文件，空格需注意
++ 具体书写规范参考 [base.css](base.css) 文件，空格需注意
 + 除 Reset 外其它通用样式建议这样写  
 
 > 代码示例：
@@ -77,4 +84,4 @@
 ## 脚本规范（JavaScript）
 + update...
 
-感谢：[Alice](http://aliceui.com/css-spec/)
+感谢：[Alice](http://aliceui.com/)
