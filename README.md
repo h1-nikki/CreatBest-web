@@ -1,5 +1,16 @@
 # 前端规范，仅限内部使用
 ---
+## 文件名规范 
+### CSS 
++ 通用样式（base.css）用来放基础通用代码，头部样式和底部样式（通用的情况下） 
++ 首页样式（home.css）用来单独写首页样式代码 
++ 内页样式（page.css）由于内页一般多数重复，所以这里另写一个内页通用样式
+
+### HTML 
++ 一般使用小写`.html`来做后缀
++ 文件名建议英文，特殊情况可用拼音。必要时可添加一说明文档，参考 [read me.txt](read me.txt) 
++ 文件名不要过长，尽量控制在 15 个字符之内 
+
 
 ## 页面规范（HTML）  
 + 使用模板页 [index.html](index.html)   
@@ -84,4 +95,13 @@
 ## 脚本规范（JavaScript）
 + update...
 
-感谢：[Alice](http://aliceui.com/)
+
+## 浏览器兼容
+
+### 页面兼容
++ 不建议使用 IE 系制作与调试，但必须兼容 IE 系
++ 页面兼容浏览器包括（Chrome, Firefox, IE9/8/7/6, 360, 搜狗, Safari, 傲游, 腾讯TT, Opera）
+
+
+
+[Alice](http://aliceui.com/)
