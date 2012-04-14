@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 GitHub Buttons</title>
+<link rel="stylesheet" href="../../base.css">
+<style>
+	body { padding:50px; }
+
+	.box { margin:20px 0; }
+	/** Button **/
+	.button {
+		position:relative;
+		display:inline-block;
+		overflow:visible;
+		margin:0;
+		padding:0.5em 1em;
+		font:11px/normal sans-serif;
+		color:#333;
+		white-space:nowrap;
+		text-decoration:none;
+		text-shadow:1px 1px 0 #fff;
+		cursor:pointer;
+		outline:none;
+
+		border:1px solid #d4d4d4;
+		-webkit-border-radius:0.2em;
+		-moz-border-radius:0.2em;
+		border-radius:0.2em;
+
+		background-color:#ececec;
+		/*background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));*/
+		background-image:-webkit-linear-gradient(#f4f4f4, #ececec);
+		background-image:-moz-linear-gradient(#f4f4f4, #ececec);
+		background-image:-o-linear-gradient(#f4f4f4, #ececec);
+		background-image:linear-gradient(#f4f4f4, #ececec);
+
+		-webkit-background-clip:padding;
+		-moz-background-clip:padding;
+		-o-background-clip:padding-box;
+
+		/* IE hacks */
+		zoom:1;
+		*display:inline;
+	}
+
+	.button:hover,
+	.button:focus,
+	.button:active,
+	.button.active {
+		color:#fff;
+		text-decoration:none;
+		text-shadow:-1px -1px 0 rgba(0,0,0,0.3);
+
+		border-color:#3072b3;
+		border-bottom-color:#2a65a0;
+
+		background-color:#3c8dde;
+		background-image:-webkit-linear-gradient(#599bdc, #3072b3);
+		background-image:-moz-linear-gradient(#599bdc, #3072b3);
+		background-image:-o-linear-gradient(#599bdc, #3072b3);
+		background-image:linear-gradient(#599bdc, #3072b3);
+	}
+
+	.button:active,
+	.button.active {
+		border-color:#2a65a0;
+		border-bottom-color:#3884cf;
+		background-color:#3072b3;
+
+		background-color:#3072b3;
+		background-image:-webkit-linear-gradient(#3072b3, #599bdc);
+		background-image:-moz-linear-gradient(#3072b3, #599bdc);
+		background-image:-o-linear-gradient(#3072b3, #599bdc);
+		background-image:linear-gradient(#3072b3, #599bdc);
+	}
+
+	.button::-moz-focus-inner {
+		padding:0;
+		border:0;
+	}
+
+
+	/** Pill **/
+	.button.pill {
+		-webkit-border-radius:50em;
+		-moz-border-radius:50em;
+		border-radius:50em;
+	}
+
+
+	/** Icons **/
+	.button.icon:before {
+		content:"";
+		position:relative;
+		top:-1px;
+		float:left;
+		width:12px;
+		height:12px;
+		margin:0 0.75em 0 -0.25em;
+		background:url(gh-icons.png) 0 99px no-repeat;
+	}
+
+	.button.arrowup.icon:before { background-position:0 0; }
+	.button.arrowup.icon:hover:before,
+	.button.arrowup.icon:focus:before,
+	.button.arrowup.icon:active:before { background-position:-12px 0; }
+
+
+	/** Button-Group **/
+	.button-group {
+		display:inline-block;
+		list-style:none;
+		margin:0;
+		padding:0;
+		/* IE hacks */
+		zoom:1;
+		*display:inline;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<div class="box">
+		<a href="#" class="button">按钮（link）</a>
+	    <input class="button" type="submit" value="按钮（input）">
+	    <button class="button" type="submit">按钮（button）</button>
+	</div>
+
+	<div class="box">
+		<a href="#" class="button pill">按钮（pill）</a>
+	</div>
+
+	<div class="box">
+		<a href="#" class="button icon arrowup">按钮（icon）</a>
+	</div>
+
+	<div class="box">
+		<div class="button-group">
+			<a href="#" class="button">按钮（link）</a>
+			<a href="#" class="button">按钮（link）</a>
+			<a href="#" class="button">按钮（link）</a>
+			<a href="#" class="button">按钮（link）</a>
+		</div>
+	</div>
+</body>
+</html>
