@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>输入限制字符效果</title>
+<style>
+textarea { width:300px; height:100px; border:2px dotted #39f; }
+</style>
+</head>
+
+<body>
+	<p id="J-info"></p>
+	<textarea id="J-word"></textarea>
+	<input id="J-submit" type="button" value="发表">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+	var _info = $('#J-info');
+	var _word = $('#J-word');
+	var _submit = $('#J-submit');
+
+	var _fontCount;
+
+	_word.live('keyup', function() {
+		Limit(_word, 280, _info);
+	});
+
+	_submit.live('click', function() {
+		if(_fontCount < 0 || _fontCount == null || _fontCount ==140) {
+			Error(_word);
+		} else {
+			alert('发表成功！');
+		}
+	});
+
+
+	/* 判断文本长度 */
+	function WordLength(obj) {
+		var _val = obj.val();
+		var _valLength = 0;
+
+		_val.replace(/\n*\s*/, '') == '' ? _valLength = 0 : _valLength = _val.match(/[^ -~]/g) == null ? _val.length : _val.length + _val.match(/[^ -~]/g).length;
+
+		return _valLength;
+	}
+
+	/* 错误提醒 */
+	function Error(obj) {
+		var _timer = null;
+		var i = 0;
+
+		_timer = setInterval(function() {
+			i++;
+			i == 5 ? clearInterval(_timer) : (i % 2 == 0 ? obj.css("background-color", "#fff") : obj.css("background-color", "#39f"));
+		}, 100);
+	}
+
+
+	/*
+	   @obj 输入框
+	   @now 字数
+	   @tit 提示
+	 */
+	function Limit(obj, now, tit) {
+		var _wordLength = WordLength(obj);
+
+		_fontCount = Math.floor((now - _wordLength) / 2);
+
+		if(_fontCount >= 0) {
+			tit.html('还可以输入<strong>'+ _fontCount +'</strong>个字！');
+			return true;
+		} else {
+			tit.html('已超出<strong style="color:#f90">'+ Math.abs(_fontCount) +'</strong>字！');
+			return false;
+		}
+
+		return _fontCount;
+	}
+	</script>
+</body>
+</html>
