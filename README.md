@@ -89,8 +89,36 @@
 
 
 ### 5、关于 Hack
-+ update...
 
+    .all-IE{ property:value\9; }  
+    :root .IE-9{ property:value\0/; }  
+    .gte-IE-8{ property:value\0; }  
+    .lte-IE-7{ *property:value; }  
+    .IE-7{ +property:value; }  
+    .IE-6{ _property:value; }  
+    .not-IE{ property//:value; }
+
+
+
+    <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->  
+    <!--[if IE]> 所有的IE可识别 <![endif]-->  
+    <!--[if IE 5.0]> 只有IE5.0可以识别 <![endif]-->  
+    <!--[if IE 5]> 仅IE5.0与IE5.5可以识别 <![endif]-->  
+    <!--[if gt IE 5.0]> IE5.0以上版本都可以识别 <![endif]-->  
+    <!--[if IE 6]> 仅IE6可识别 <![endif]-->  
+    <!--[if lt IE 6]>IE6以下版本可识别 <![endif]-->  
+    <!--[if gte IE 6]> IE6以及IE6以上版本可识别 <![endif]-->  
+    <!--[if IE 7]> 仅IE7可识别 <![endif]-->  
+    <!--[if lt IE 7]> IE7以下版本可识别 <![endif]-->  
+    <!--[if gte IE 7]> IE7以及IE7以上版本可识别 <![endif]-->
+
+
+说明：
+    lte：就是Less than or equal to的简写，也就是小于或等于的意思。  
+    lt ：就是Less than的简写，也就是小于的意思。  
+    gte：就是Greater than or equal to的简写，也就是大于或等于的意思。  
+    gt ：就是Greater than的简写，也就是大于的意思。  
+    ! ：就是不等于的意思，跟javascript里的不等于判断符相同
 
 ## 脚本规范（JavaScript）
 + update...
