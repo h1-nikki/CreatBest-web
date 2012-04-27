@@ -120,6 +120,7 @@
     gt ：就是Greater than的简写，也就是大于的意思。  
     ! ：就是不等于的意思，跟javascript里的不等于判断符相同
 
+
 ## 脚本规范（JavaScript）
 + update...
 
