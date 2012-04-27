@@ -90,14 +90,13 @@
 
 ### 5、关于 Hack
 
-    .all-IE{ property:value\9; }  
-    :root .IE-9{ property:value\0/; }  
-    .gte-IE-8{ property:value\0; }  
-    .lte-IE-7{ *property:value; }  
-    .IE-7{ +property:value; }  
-    .IE-6{ _property:value; }  
-    .not-IE{ property//:value; }
-
+    .all-IE { property:value\9; }  
+    :root .IE-9 { property:value\0/; }  
+    .gte-IE-8 { property:value\0; }  
+    .lte-IE-7 { *property:value; }  
+    .IE-7 { +property:value; }  
+    .IE-6 { _property:value; }  
+    .not-IE { property//:value; }
 
 
     <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->  
@@ -114,6 +113,7 @@
 
 
 说明：
+
     lte：就是Less than or equal to的简写，也就是小于或等于的意思。  
     lt ：就是Less than的简写，也就是小于的意思。  
     gte：就是Greater than or equal to的简写，也就是大于或等于的意思。  
