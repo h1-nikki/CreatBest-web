@@ -99,17 +99,12 @@
     .not-IE { property//:value; }
 
 
-    <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->  
-    <!--[if IE]> 所有的IE可识别 <![endif]-->  
-    <!--[if IE 5.0]> 只有IE5.0可以识别 <![endif]-->  
-    <!--[if IE 5]> 仅IE5.0与IE5.5可以识别 <![endif]-->  
-    <!--[if gt IE 5.0]> IE5.0以上版本都可以识别 <![endif]-->  
-    <!--[if IE 6]> 仅IE6可识别 <![endif]-->  
-    <!--[if lt IE 6]>IE6以下版本可识别 <![endif]-->  
-    <!--[if gte IE 6]> IE6以及IE6以上版本可识别 <![endif]-->  
-    <!--[if IE 7]> 仅IE7可识别 <![endif]-->  
-    <!--[if lt IE 7]> IE7以下版本可识别 <![endif]-->  
-    <!--[if gte IE 7]> IE7以及IE7以上版本可识别 <![endif]-->
+    <!--[if lt IE 7]> <html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->  
+    <!--[if IE 7]> <html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
+    <!--[if IE 8]> <html class="no-js ie ie8 lte9 lte8"> <![endif]-->
+    <!--[if IE 9]> <html class="no-js ie ie9 lte9"> <![endif]-->
+    <!--[if gt IE 9]> <html class="no-js"> <![endif]-->
+    <!--[if !IE]> <!--> <html> <!--<![endif]-->
 
 
 说明：
@@ -130,3 +125,8 @@
 ### 页面兼容
 + 不建议使用 IE 系制作与调试，但必须兼容 IE 系
 + 页面兼容浏览器包括（Chrome, Firefox, IE9/8/7/6, 360, 搜狗, Safari, 傲游, 腾讯TT, Opera）多多益善，酌情测试。国内浏览器使用情况可参考[CNZZ数据中心](http://brow.data.cnzz.com/)
+
+
+
+
+http://www.cnblogs.com/jscode/archive/2012/05/09/2491148.html
