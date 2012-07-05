@@ -13,7 +13,7 @@
 
 
 ## 页面规范（HTML）  
-+ 使用模板页 [index.html](https://github.com/mittya/ya/blob/master/index.html)   
++ 使用模板页 [index.html](https://github.com/mittya/CreatBest-web/blob/master/index.html)   
 + 注意编码，统一 utf-8  
 + 标题（Title）写法`网站全名`，内页 Title 写法 `栏目名称 - 网站名称` 注意空格  
 + Meta 标签必写，关系到优化，尽量写详细。更多：[SEO](http://baike.baidu.com/view/1047.htm)  
@@ -30,7 +30,7 @@
 + 如样式有必要在页面中书写，应写在 `<head>` 标签中的 `<style>` 里
 
 ### 2、样式书写（这仅是内部规范，别较真儿）  
-+ 具体书写规范参考 [base.css](https://github.com/mittya/ya/blob/master/base.css) 文件，空格需注意
++ 具体书写规范参考 [base.css](https://github.com/mittya/CreatBest-web/blob/master/base.css) 文件，空格需注意
 + 除 Reset 外其它通用样式建议这样写  
 
 > 代码示例：
