@@ -19,7 +19,7 @@ b, strong { font-weight:bold; }
 address, cite, dfn, em, var { font-style:normal; }
 code, kbd, pre, samp { font-family:Tahoma, Arial; }
 small { font-size:12px; }
-ul, ol { list-style:none; }
+ul, ol, li { list-style:none; }
 a { text-decoration:none; color:#000; cursor:pointer; }
 a:active { color:#000; }
 a:hover { text-decoration:underline; color:#000; }
