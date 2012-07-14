@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>css3</title>
+<style type="text/css"> 
+body { background:#000 }
+.dandelion{ position:relative;width:118px; margin:30px 31px 0 0;float:right;_display:inline; height:150px;_display:none}
+.dandelion span{display:block; position:absolute;bottom:0px;background-image:url(dandelion.png); background-repeat:no-repeat;_display:none;}
+.dandelion .smalldan{ width:46px; height:60px;left:10px;z-index:2; background-position:0 -90px;}
+.dandelion .bigdan{ width:98px; height:150px;right:0px;background-position:-52px 0px;}
+.dandelion span{-webkit-animation:dandelionAnimation 3s linear infinite;-webkit-transform-origin:bottom right;-moz-animation:dandelionAnimation 3s linear infinite;-moz-transform-origin:bottom right;} 
+  
+@-webkit-keyframes dandelionAnimation{0%{-webkit-transform:rotate(0deg)}15%{-webkit-transform:rotate(6deg)}25%{-webkit-transform:rotate(0deg)}30%{-webkit-transform:rotate(-2deg)}45%{-webkit-transform:rotate(2deg)}55%{-webkit-transform:rotate(0deg)}65%{-webkit-transform:rotate(-1deg)}80%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(0deg)}  
+} 
+@-moz-keyframes dandelionAnimation{0%{-moz-transform:rotate(0deg)}15%{-moz-transform:rotate(6deg)}25%{-moz-transform:rotate(0deg)}30%{-moz-transform:rotate(-2deg)}45%{-moz-transform:rotate(2deg)}55%{-moz-transform:rotate(0deg)}65%{-moz-transform:rotate(-1deg)}80%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(0deg)}  
+} 
+
+</style>
+</head>
+<body id="L">
+<div id="headWrap" class="clear">
+    <div class="headWrap_cnt">
+        <div class="dandelion">
+            <span class="smalldan"></span>
+            <span class="bigdan"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
