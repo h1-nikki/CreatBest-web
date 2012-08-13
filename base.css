@@ -42,6 +42,8 @@ del { text-decoration:line-through; }
 .fn-left, .fn-right { display:inline; /*for IE6 double margin*/ }
 .fn-left { float:left; }
 .fn-right { float:right; }
+/* hide for js */
+.fn-hide { display:none; }
 /* clear */
 .fn-clearfix:after { display:block; font-size:0; content:'\0020'; clear:both; height:0; }
 .fn-clearfix { zoom:1; /*for IE6 IE7*/ }
