@@ -5,7 +5,6 @@
     ├ static ┐
     │        ├ css
     │        └ js
-    │
     └ index.html
 
 ## 文件名规范 
