@@ -5,9 +5,9 @@
 
     ┐
     ├ assets/ ┐
-    │        ├ images/
-    │        ├ css/
-    │        └ js/
+    │         ├ images/
+    │         ├ css/
+    │         └ js/
     ├ pic/
     └ index.html
 
