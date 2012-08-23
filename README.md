@@ -1,4 +1,4 @@
-# 创思佳前端规范（CreatBest.Com）
+# 创思佳前端规范（creatbest.com）
 ---
 
 ## 目录规范 
