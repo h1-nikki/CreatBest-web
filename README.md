@@ -4,10 +4,11 @@
 ## 目录规范 
 
     ┐
-    ├ assets ┐
-    │        ├ images
-    │        ├ css
-    │        └ js
+    ├ assets/ ┐
+    │        ├ images/
+    │        ├ css/
+    │        └ js/
+    ├ pic/
     └ index.html
 
 
