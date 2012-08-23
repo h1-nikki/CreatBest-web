@@ -2,7 +2,7 @@
 
 /*
  * @Name: base
- * @Overview: reset & global
+ * @Overview: Reset & Global
  * @Company: http://www.CreatBest.com
  * @Author: mittya
  */
@@ -51,4 +51,5 @@ del { text-decoration:line-through; }
 /* chrome-zh font size */
 .fn-font-chrome { -webkit-text-size-adjust:none; }
 
-/** golbal **/
+
+/** Golbal **/
