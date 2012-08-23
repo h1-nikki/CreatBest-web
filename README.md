@@ -1,11 +1,15 @@
-# 创思佳前端规范（CreatBest）
+# 创思佳前端规范（CreatBest.Com）
 ---
+
 ## 目录规范 
 
-    ├ static ┐
+    ┐
+    ├ assets ┐
+    │        ├ images
     │        ├ css
     │        └ js
     └ index.html
+
 
 ## 文件名规范 
 ### CSS 
