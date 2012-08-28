@@ -36,6 +36,7 @@ pre { white-space:pre-wrap; word-wrap:break-word; }
 table { border-collapse:collapse; border-spacing:0; }
 th { text-align:inherit; /*IE bug fixed: th is not inherit text-align*/ }
 fieldset, img { border:0; }
+a img {	border-width:0; vertical-align:middle; }
 iframe { display:block; }
 del { text-decoration:line-through; }
 /* float */
