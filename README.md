@@ -9,6 +9,7 @@
     │         ├ favicon/      收藏图标，注①
     │         ├ css/          样式
     │         └ js/           脚本
+    │
     ├ uploads/                上传的图片
     └ index.html              首页
 
