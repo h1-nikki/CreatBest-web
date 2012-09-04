@@ -1,25 +1,17 @@
 # 创思佳前端规范（creatbest.com）
 ---
 
-## 目录规范 
+## [目录规范](https://github.com/mittya/CreatBest-web)
 
     ┐
     ├ assets/ ┐
     │         ├ images/       图片、背景图及图标
-    │         ├ favicon/      收藏图标
+    │         ├ favicon/      收藏图标（名称参考首页模板）
     │         ├ css/          样式
     │         └ js/           脚本
     │
     ├ uploads/                上传的图片
     └ index.html              首页
-
-收藏图标命名：
-
-    favicon.ico  
-    apple-touch-icon-144-precomposed.png  
-    apple-touch-icon-114-precomposed.png  
-    apple-touch-icon-72-precomposed.png  
-    apple-touch-icon-57-precomposed.png  
 
 
 ## [文件名规范](https://github.com/mittya/CreatBest-web/blob/master/docs/NAME.md)
@@ -30,4 +22,4 @@
 
 ## [脚本规范（JavaScript）](https://github.com/mittya/CreatBest-web/blob/master/docs/JAVASCRIPT.md)
 
-## [浏览器兼容（Browser）]()
+## [浏览器兼容（Browser）](https://github.com/mittya/CreatBest-web/blob/master/docs/BROWSER.md)
