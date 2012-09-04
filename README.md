@@ -104,6 +104,9 @@
 
 ### 5、关于 Hack
 
++ 样式 hack
+    
+    
     .all-IE { property:value\9; }  
     :root .IE-9 { property:value\0/; }  
     .gte-IE-8 { property:value\0; }  
@@ -112,6 +115,14 @@
     .IE-6 { _property:value; }  
     .not-IE { property//:value; }
 
+    @-moz-document url-prefix() { .firefox{property:value;} }
+    @media all and (-webkit-min-device-pixel-ratio:0) { .webkit{property:value;} }
+    @media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) { .opera{property:value;} }
+    @media screen and (max-device-width: 480px) { .iphone-or-mobile-s-webkit{property:value;} }
+
+
++ 页面 hack
+    
 
     <!--[if lt IE 7]> <html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->  
     <!--[if IE 7]> <html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
