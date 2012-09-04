@@ -6,7 +6,7 @@
     ┐
     ├ assets/ ┐
     │         ├ images/       图片、背景图及图标
-    │         ├ favicon/      收藏图标，注①
+    │         ├ favicon/      收藏图标（favicon.ico / apple-touch-icon-144-precomposed.png / apple-touch-icon-114-precomposed.png / apple-touch-icon-72-precomposed.png / apple-touch-icon-57-precomposed.png）
     │         ├ css/          样式
     │         └ js/           脚本
     │
@@ -32,7 +32,7 @@
 + 标题（Title）写法`网站全名`，内页 Title 写法 `栏目名称 - 网站名称` 注意空格  
 + Meta 标签必写，关系到优化，尽量写详细。更多：[SEO](http://baike.baidu.com/view/1047.htm)  
 + 样式引入 `<link rel="stylesheet" href="base.css" />`  
-+ 建议每个项目都有图标的引入，放在项目根目录即可 `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />` 如果你不写页面加载也会默认找这个文件  
++ 建议每个项目都有图标的引入，放在项目根目录即可 `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">` 如果你不写页面加载也会默认找这个文件  
 + 不允许在标签中直接写样式，除特例外  
 + update... [html](http://sofish.de/1688)  
 
@@ -40,10 +40,10 @@
 
 ### 1、CSS 文件  
 + 文件需使用 utf-8 编码（无 BOM）  
-+ 样式文件必须使用 link 方式链入，不建议使用 @import  
++ 样式文件必须使用 link 方式链入，不允许使用 @import  
 + 如样式有必要在页面中书写，应写在 `<head>` 标签中的 `<style>` 里
 
-### 2、样式书写（这仅是内部规范，别较真儿）  
+### 2、样式书写
 + 具体书写规范参考 [base.css](https://github.com/mittya/CreatBest-web/blob/master/base.css) 文件，空格需注意
 + 除 Reset 外其它通用样式建议这样写  
 
@@ -61,14 +61,14 @@
 + 像素为 0 值的可省略 `px`
 
 ### 3、命名
-+ 不要以数字为开头来命名（不信可以试试）
++ 不要以数字为开头来命名
 + 命名不能使用基础样式中已有的前缀（如：.fn- / .ui-）每个人需自定义个人前缀，防止命名冲突，建议两个字符（如：.ya-）
 + 名称尽量有意义，不要过长（如：.navigation 可缩写为 .nav）
 + 要小写，多拼命名用 - 分开，先写功能后写位置（如：.menuleft 建议写成 .menu-left）
 + 谨慎使用关键词来命名（如：select, active, first, last, left, right, more ...）如果命名可通用则要限定在该命名所处上下文环境中。例：有一标签Class为.header的子集中有一通用标签名为 .more，应该这样定义样式 .header .more {} 除特殊情况禁止单独设置成全局样式，以免影响其它样式
 + 样式定义尽量少用 id，如用则需保持唯一性
 
-### 4、注释（利人利己）
+### 4、注释
 + 组件注释
 
 > 代码示例：
