@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>CSS 中文字体对照表</title>
-<style>
-body, table, thead, tbody, th, tr, td { margin:0; padding:0; }
-body { background-color:#fff; }
-table { margin:50px auto; width:1000px; font-size:14px; border-collapse:collapse; border-spacing:0; }
-td { padding:6px; border:1px solid #999; }
-thead th { height:40px; border:1px solid #777; }
-tbody tr:hover { background-color:#eee; }
-</style>
-</head>
-
-<body>
 <table>
     <thead>
         <tr style="background-color:#eee">
@@ -259,5 +243,3 @@ tbody tr:hover { background-color:#eee; }
         </tr>
     </tbody>
 </table>
-</body>
-</html>
