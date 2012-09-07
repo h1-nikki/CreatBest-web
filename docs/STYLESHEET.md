@@ -125,3 +125,9 @@ important > 内联 > ID > 类 > 标签 | 伪类 | 属性选择 > 伪对象 > 继
     #id                0100
     内联样式的(style)   0100理论是和 #id 是相同的，但它会高于 #id
     !important         1000
+
+
+
+### 7、CSS 字体对照表
+
+[点击查看](https://github.com/mittya/CreatBest-web/blob/master/docs/CSSFONT.md)
