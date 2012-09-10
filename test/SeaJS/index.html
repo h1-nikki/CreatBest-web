@@ -8,7 +8,7 @@
 <body>
 <a id="beautiful-sea" href="javascript:">SeaJS</a>
 
-<script src="js/sea.js"></script>
+<script src="js/sea.js" id="seajsnode"></script>
 
 <script>
 seajs.config({
@@ -16,13 +16,15 @@ seajs.config({
     'jquery': 'jquery/jquery'
   }
 });
-</script>
 
-<script>
 seajs.use('base');
 
 seajs.use('base', function(base) {
 	base.testMethod('beautiful-sea');
+});
+
+seajs.use(['jquery'], function() {
+    $('#beautiful-sea').append('<b>abc</b>');
 });
 
 seajs.use(['base', 'page'], function(base, page) {
@@ -30,9 +32,6 @@ seajs.use(['base', 'page'], function(base, page) {
 	page.testMethod('beautiful-sea');
 });
 
-seajs.use(['jquery'], function() {
-  $('#beautiful-sea').append('<b>abc</b>');
-});
 </script>
 </body>
 </html>
