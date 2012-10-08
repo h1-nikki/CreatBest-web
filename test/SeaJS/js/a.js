@@ -1,0 +1,1 @@
+$('#beautiful-sea').append('<b>Test</b>');
