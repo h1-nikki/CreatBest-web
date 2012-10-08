@@ -3,35 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <title>SeaJS</title>
+<link rel="stylesheet" href="http://switchable.mrzhang.me/stylesheets/screen.css">
 </head>
 
 <body>
 <a id="beautiful-sea" href="javascript:">SeaJS</a>
 
-<script src="js/sea.js" id="seajsnode"></script>
+<section class="demo">
 
+  <!-- styles for this demo -->
+  <style>
+  #slide {
+    /* Required Styles */
+    position:relative;
+    width:550px;
+    height:310px;
+    overflow:hidden;
+
+    float:left;
+    border:10px solid #444;
+    border-radius:5px;
+    box-shadow:0 0 6px rgba(0, 0, 0, .4);
+  }
+  #slide li {
+    position:absolute;
+  }
+  #slide img {
+    display:block;
+    width:550px;
+    height:310px;
+  }
+  #slide em {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background:rgba(0, 0, 0, .7);
+    color:#fff;
+    font-size:30px;
+    line-height:60px;
+    text-indent:1em;
+  }
+
+  #triggers {
+    float:right;
+    margin-top:1px;
+  }
+  #triggers li {
+    margin-bottom:8px;
+    *margin-bottom:5px;
+  }
+  #triggers img {
+    display:block;
+    width:124px;
+    height:70px;
+    border:3px solid #444;
+    border-radius:4px;
+    box-shadow:0 0 3px rgba(0, 0, 0, .4);
+    cursor:pointer;
+  }
+
+  #mask {
+    display:block;
+    position:absolute;
+    top:1px;
+    right:0;
+    width:124px;
+    height:70px;
+    border:3px solid #8ab516;
+    border-radius:4px;
+  }
+
+  .demo {
+    width: 720px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  </style>
+
+  <div class="wrap clearfix" style="position:relative">
+    <ul id="slide">
+      <li>
+        <img src="http://switchable.mrzhang.me/images/p1.jpg" />
+        <em>One Man Band</em>
+      </li>
+      <li>
+        <img src="http://switchable.mrzhang.me/images/p2.jpg" />
+        <em>Geri&#8217;s Game</em>
+      </li>
+      <li>
+        <img src="http://switchable.mrzhang.me/images/p3.jpg" />
+        <em>WALL E</em>
+      </li>
+      <li>
+        <img src="http://switchable.mrzhang.me/images/p4.jpg" />
+        <em>The Incredibles</em>
+      </li>
+    </ul>
+    <ul id="triggers">
+      <li><img src="http://switchable.mrzhang.me/images/p1.jpg" /></li>
+      <li><img src="http://switchable.mrzhang.me/images/p2.jpg" /></li>
+      <li><img src="http://switchable.mrzhang.me/images/p3.jpg" /></li>
+      <li><img src="http://switchable.mrzhang.me/images/p4.jpg" /></li>
+    </ul>
+    <div id="mask"></div>
+  </div>
+
+</section>
+
+
+<script src="js/sea.js" id="seajsnode"></script>
 <script>
 seajs.config({
   alias: {
-    'jquery': 'jquery/jquery'
-  }
+    'jquery': 'jquery/jquery.js'
+  },
+  preload: ["jquery"]
 });
 
-seajs.use('base');
+seajs.modify('jquery', function(require, exports) {
+  window.jQuery = window.$ = exports
+});
 
+seajs.use('jquery.switchable');
+seajs.use('switchable');
+
+
+
+seajs.use('base');
 seajs.use('base', function(base) {
 	base.testMethod('beautiful-sea');
 });
-
 seajs.use(['jquery'], function() {
     $('#beautiful-sea').append('<b>abc</b>');
 });
-
 seajs.use(['base', 'page'], function(base, page) {
 	base.testMethod('beautiful-sea');
 	page.testMethod('beautiful-sea');
 });
-
 </script>
+
 </body>
 </html>
