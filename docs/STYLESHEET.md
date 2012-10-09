@@ -12,14 +12,10 @@
 + 具体书写规范参考 [base.css](https://github.com/mittya/CreatBest-web/blob/master/base.css) 文件，空格需注意
 + 除 Reset 外其它通用样式建议这样写  
 
-> 代码示例：
+    .ui-header,  
+    .ui-footer { margin: 0 auto; width: 974px; }  
 
-    .ui-header,
-    .ui-footer { margin:0 auto; width:974px; }
-
-+ 颜色值统一小写，实际代码不要出现 `red / blue` 等词，有些词可缩写
-
-> 代码示例：
++ 颜色值统一小写，实际代码不要出现 `red / blue` 等词，有些词可缩写，可以采用 [rgba](http://blog.imbolo.com/css3-rgba-advanced-usage/) 方式书写颜色值
 
     body { color:rgb(255, 255, 255); background:#fff; }
 
