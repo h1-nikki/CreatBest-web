@@ -1,4 +1,4 @@
-## Jquery
+## jQuery 常用效果
 
 
 [http://switchable.mrzhang.me/](http://switchable.mrzhang.me/)
