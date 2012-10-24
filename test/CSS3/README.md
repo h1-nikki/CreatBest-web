@@ -2,11 +2,10 @@
 
 ## 圆角
 
-    border-radius: 10px; /* CSS3 Property */  
-    -moz-border-radius: 10px;  /* Firefox */ 
-    -webkit-border-radius: 10px; /* Chrome/Safari */ 
-    
-. 
+    -moz-border-radius: 10px;  
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+`
 
     /* Firefox */
     -moz-border-radius-topleft: 10px;
@@ -14,7 +13,7 @@
     -moz-border-radius-bottomright: 30px;
     -moz-border-radius-bottomleft: 0;
     
-.
+`
 
     /* Chrome and Safari */ 
     -webkit-border-top-left-radius: 10px;
@@ -23,17 +22,28 @@
     -webkit-border-bottom-left-radius: 0;
 
 
-## 阴影
+## 盒状阴影（文本阴影 text-shadow）
+
+-moz-box-shadow、-webkit-box-shadow和box-shadow的设置是一样的，都有4个参数，含义分别为：x轴偏移值、y轴偏移值、阴影的模糊度、以及阴影颜色。
 
     -moz-box-shadow: 20px 10px 7px #ccc;  
     -webkit-box-shadow: 20px 10px 7px #ccc;  
     box-shadow: 20px 10px 7px #ccc; 
     
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=3px, OffY=3px, Color='#ffffff'); /* IE6,IE7 */
+    
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=3px, OffY=3px, Color='#ffffff')"; /* IE8 */
+          
+    
 .
 
+    /* JS */
     object.style.boxShadow="20px 10px 7px #ccc"
 
+## 透明
 
+    opacity: 1; /* 不透明 */  
+    opacity: 0.7; /* 透明70% */
 
 
 ## @media属性
@@ -55,4 +65,10 @@ CSS3的Gradient（渐变）属性给了开发者另一个惊人的体验。Gradi
 
 
 
-update… [url](http://www.iteye.com/news/26075) 
+
+
+扩展阅读
+
+[http://www.iteye.com/news/26075](http://www.iteye.com/news/26075) 
+
+[http://www.ruanyifeng.com/blog/2010/03/cross-browser_css3_features.html](http://www.ruanyifeng.com/blog/2010/03/cross-browser_css3_features.html)
