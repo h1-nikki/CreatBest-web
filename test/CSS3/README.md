@@ -45,6 +45,8 @@
     opacity: 1; /* 不透明 */  
     opacity: 0.7; /* 透明70% */
 
+    filter: alpha(opacity=70); /* IE */
+
 
 ## @media属性
 Media属性用于设置同一样式表在不同屏幕下的样式，可以在属性值中指定应用此样式的介质或媒体。
