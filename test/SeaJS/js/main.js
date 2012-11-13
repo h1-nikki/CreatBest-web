@@ -5,11 +5,14 @@ seajs.config({
   preload: ["jquery"]
 });
 
+seajs.use('a.js');
+
+
 /*seajs.modify('jquery', function(require, exports) {
   window.jQuery = window.$ = exports
 });*/
 
-seajs.use('jquery.switchable', function() {
+/*seajs.use('jquery.switchable', function() {
   $('#slide').switchable({
     triggers: $('#triggers').find('li'),
     effect: 'fade',
@@ -26,11 +29,9 @@ seajs.use('jquery.switchable', function() {
       ).run();
     }
   });
-});
+});*/
 
-seajs.use('a');
-
-seajs.use(['base', 'page'], function(base, page) {
-  base.testMethod('beautiful-sea');
-  page.testMethod('beautiful-sea');
-});
+// seajs.use(['base', 'page'], function(base, page) {
+//   base.testMethod('beautiful-sea');
+//   page.testMethod('beautiful-sea');
+// });

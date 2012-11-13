@@ -1,1 +1,3 @@
-$('#beautiful-sea').append('<b>Test</b>');
+define(function(require, exports, module) {
+	var b = require('b.js');
+});
