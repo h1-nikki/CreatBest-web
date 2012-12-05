@@ -66,6 +66,8 @@ Media属性用于设置同一样式表在不同屏幕下的样式，可以在属
 CSS3的Gradient（渐变）属性给了开发者另一个惊人的体验。Gradient还未得到全部浏览器的支持，所以不能完全依赖Gradient来设置布局。   
 
 
+## 文字模糊
+[http://anegie.com/blog/css3-text-blur/](http://anegie.com/blog/css3-text-blur/)
 
 
 
