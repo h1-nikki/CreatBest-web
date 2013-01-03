@@ -1,6 +1,6 @@
 /**
  * @preserve SeaJS - A Module Loader for the Web
- * v1.3.0 | seajs.org | MIT Licensed
+ * v%VERSION% | seajs.org | MIT Licensed
  */
 
 
@@ -14,7 +14,7 @@ this.seajs = { _seajs: this.seajs }
  * The version of the framework. It will be replaced with "major.minor.patch"
  * when building.
  */
-seajs.version = '1.3.0'
+seajs.version = '%VERSION%'
 
 
 /**
@@ -38,6 +38,7 @@ seajs._config = {
    */
   preload: []
 }
+
 
 /**
  * The minimal language enhancement
@@ -156,6 +157,7 @@ seajs._config = {
 
 })(seajs._util)
 
+
 /**
  * The tiny console
  */
@@ -198,6 +200,7 @@ seajs._config = {
   }
 
 })(seajs._util)
+
 
 /**
  * Path utilities
@@ -461,6 +464,7 @@ seajs._config = {
 
 })(seajs._util, seajs._config, this)
 
+
 /**
  * Utilities for fetching js and css files
  */
@@ -675,12 +679,13 @@ seajs._config = {
   /**
    * References:
    *  - http://unixpapa.com/js/dyna.html
-   *  - ../test/research/load-js-css/test.html
-   *  - ../test/issues/load-css/test.html
+   *  - ../tests/research/load-js-css/test.html
+   *  - ../tests/issues/load-css/test.html
    *  - http://www.blaze.io/technical/ies-premature-execution-problem/
    */
 
 })(seajs._util, seajs._config, this)
+
 
 /**
  * The parser for dependencies
@@ -692,9 +697,9 @@ seajs._config = {
 
   util.parseDependencies = function(code) {
     // Parse these `requires`:
-    //   var a = require('a');
-    //   someMethod(require('b'));
-    //   require('c');
+    //   var a = require('a-debug');
+    //   someMethod(require('b-debug'));
+    //   require('c-debug');
     //   ...
     // Doesn't parse:
     //   someInstance.require(...);
@@ -720,6 +725,7 @@ seajs._config = {
   }
 
 })(seajs._util)
+
 
 /**
  * The core of loader
@@ -1041,8 +1047,6 @@ seajs._config = {
     var requestUri = util.parseMap(uri)
 
     if (fetchedList[requestUri]) {
-      // See test/issues/debug-using-map
-      cachedModules[uri] = cachedModules[requestUri]
       callback()
       return
     }
@@ -1075,7 +1079,7 @@ seajs._config = {
           }
 
           // Assigns the first module in package to cachedModules[uri]
-          // See: test/issues/un-correspondence
+          // See: tests/issues/un-correspondence
           if (firstModuleInPackage && module.status === STATUS.FETCHED) {
             cachedModules[uri] = firstModuleInPackage
             firstModuleInPackage.realUri = uri
@@ -1237,6 +1241,7 @@ seajs._config = {
 
 })(seajs, seajs._util, seajs._config)
 
+
 /**
  * The configuration
  */
@@ -1359,10 +1364,8 @@ seajs._config = {
 
 
   function debugSync() {
-    if (config.debug) {
-      // For convenient reference
-      seajs.debug = !!config.debug
-    }
+    // For convenient reference
+    seajs.debug = !!config.debug
   }
 
   debugSync()
@@ -1396,6 +1399,7 @@ seajs._config = {
   }
 
 })(seajs, seajs._util, seajs._config)
+
 
 /**
  * Prepare for bootstrapping
@@ -1452,6 +1456,7 @@ seajs._config = {
 
 })(seajs, seajs._util, this)
 
+
 /**
  * The bootstrap and entrances
  */
@@ -1475,7 +1480,7 @@ seajs._config = {
 
 
     // Parses the pre-call of seajs.config/seajs.use/define.
-  // Ref: test/bootstrap/async-3.html
+  // Ref: tests/bootstrap/async-3.html
   ;(function(args) {
     if (args) {
       var hash = {
@@ -1501,5 +1506,4 @@ seajs._config = {
   delete seajs._seajs
 
 })(seajs, seajs._config, this)
-
 
